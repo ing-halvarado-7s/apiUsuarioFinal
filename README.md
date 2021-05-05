@@ -142,7 +142,7 @@ el archivo se llama 'USUARIOS_API.postman_collection'.
 
 <!-- TODO: Corregir el correo * -->
 
-- Email: [heimys@gmail.com](mailto:heimys@gmail.com)
+- Email: [ing.halvarado.7s@gmail.com](mailto:ing.halvarado.7s@gmail.com)
 - Twitter: [@HeimysAlvarado](https://twitter.com/HeimysAlvarado)
 - Github: [@ing-halvarado-7s](https://github.com/ing-halvarado-7s)
 
