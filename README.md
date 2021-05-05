@@ -140,7 +140,7 @@ La desintalación consiste en detener y remover: contenedores y volumenes usados
 
 <!-- TODO: Corregir el correo * -->
 
-- Email: [heimys@gmail.com](mailto:heimys@gmail.com)
+- Email: [ing.halvarado.7s@gmail.com](mailto:ing.halvarado.7s@gmail.com)
 - Twitter: [@HeimysAlvarado](https://twitter.com/HeimysAlvarado)
 - Github: [@ing-halvarado-7s](https://github.com/ing-halvarado-7s)
 
