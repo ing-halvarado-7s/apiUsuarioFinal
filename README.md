@@ -64,8 +64,11 @@ Los campos que llevará los usuarios son:
 
 ### Run config initial
 `docker-compose exec app composer install`
+
 `docker-compose exec app php artisan key:generate`
+
 `docker-compose exec app php artisan jwt:secret`
+
 `docker-compose exec app php artisan config:cache`
 
 `docker-compose exec app php artisan migrate:refresh --seed`
