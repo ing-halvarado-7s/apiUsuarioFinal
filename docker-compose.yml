@@ -39,7 +39,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: root
+      # MYSQL_USER: root
     restart: always
 
   #Adminer

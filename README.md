@@ -54,11 +54,21 @@ Los campos que llevará los usuarios son:
 
 `cp .env.example .env`
 
-4. Ejecutar el archivo de despliegue. Este archivo contiene todos los comandos necesarios para: buildear la image, levantar los contenedores y ejecutar los comandos artisan necesarios. 
+4. Ejecutar los siguientes comandos en la consola de docker. Estos son los comandos necesarios para: buildear la image, levantar los contenedores y ejecutar los comandos artisan necesarios. 
 
-Por tanto, sólo deberá ejecutar este archivo y se desplegará todo.
+### Build app image
+`docker-compose build`
 
-`sh ./.scripts/run.sh`
+### Run app 
+`docker-compose up -d`
+
+### Run config initial
+`docker-compose exec app composer install`
+`docker-compose exec app php artisan key:generate`
+`docker-compose exec app php artisan jwt:secret`
+`docker-compose exec app php artisan config:cache`
+
+`docker-compose exec app php artisan migrate:refresh --seed`
 
 5. En la mitad del despliegue de la API, se le preguntará ¿Está seguro de que desea anular la clave secreta? 
 
@@ -66,9 +76,9 @@ Por tanto, sólo deberá ejecutar este archivo y se desplegará todo.
 
 NOTA: Ejecutar este paso sólo sí tiene problemas con los permisos de usuario al desplegar.
 
-7. Para corregir los errores de permisos de Laravel, ejecutar:
+7. Para levantar el servidor, ejecutar:
 
-`sh ./.scripts/fix-permissions.sh`
+`docker-compose exec app php artisan serve`
 
 ## 🚀 Importando colección de Postman
 
@@ -124,15 +134,7 @@ el archivo se llama 'USUARIOS_API.postman_collection'.
 
 ![](public/assets/img/adminer_app_db_usuarios.png)
 
-## 🚀 Desinstalar
 
-La desintalación consiste en detener y remover: contenedores y volumenes usados para el servicio de la API.
-
-1. Ejecutar en la consola: 
-
-`sh ./.scripts/remove.sh`
-
-2. Escribir `yes` y presionar `Enter` para confirmar la desintalación. 
 
 ## Author
 
